@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color:hsl(0, 100%, 74%)  ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenu{
+    display:flex ;
+    flex-direction: row;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-between;
+}
+.partieGauche{
+    color: white;
+    width: 45%;
+    
+}
+.partieGauche h1{
+    font-size: 40px;
+    line-height: 1;
+
+    padding-bottom:20px ;
+}
+.partieGauche p{
+    font-size: 14px;
+
+    line-height: 1.5;
+    color:rgb(218, 218, 218);
+}
+.partieDroite{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    
+
+}
+.partieDroite .partieHaute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 45px;
+    margin-bottom: 15px;
+    background-color:hsl(248, 32%, 49%) ;
+
+}
+.partieDroite .partieHaute p{
+    color: hsl(246, 25%, 77%);
+    font-size: 14px;
+}
+.partieDroite .partieHaute p span{
+    font-weight: bold;
+    color: white;
+}
+.partieDroite .partieBas{
+    
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+form{
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+form div{
+    width: 100%;
+    padding-top: 20px;
+    
+}
+form div>p{
+    display: none;
+    
+}
+.error-msg{
+    float: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    display: block;
+}
+
+form input{
+    width: 100%;
+    padding-left: 20px;
+    height:45px ;
+    border-radius: 5px;
+    border-color:hsl(246, 25%, 77%);
+    box-sizing: border-box
+    
+
+}
+form button{
+    margin: 20px 0 10px;
+    height: 45px;
+    font-size: 12px;
+    background-color:hsl(154, 59%, 51%) ;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+form button:hover{
+    cursor: pointer;
+    background-color:hsl(154, 59%, 60%);
+}
+form>p{
+    margin-bottom: 25px;
+    font-size: 10px;
+    text-align: center;
+    color:hsl(246, 25%, 77%) ;
+}
+form>p a{
+    cursor: pointer;
+    text-decoration: none;
+    color:hsl(0, 100%, 74%);
+}
+
+
+.attribution {
+    color:white;
+    margin-top:10px; 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 480px){
+    body{
+        width: auto;
+        height: auto;
+    }
+    .container{
+        margin-left:-10px
+    }
+    .contenu{
+        text-align: center;
+        
+        flex-direction: column;
+
+        width: 100%;
+    }
+    .partieGauche{
+        
+        width: 90%;
+        margin-bottom: 30px;
+        
+    }
+    .partieGauche h1{
+        margin: 100px auto 0;
+        font-size: 28px;
+        line-height: 1.5;
+        width: 90%;
+        
+    }
+    .partieGauche p {
+        margin: auto;
+        font-size: 12px;
+        width: 90%;
+    }
+    .partieDroite{
+        width: 90%;
+    }
+    .partieDroite .partieHaute{
+        height:inherit
+    }
+    .partieDroite .partieHaute p{
+        padding: 12px 0;
+        width: 60%;
+        font-size: 12px;
+
+    }
+}
